@@ -1,0 +1,54 @@
+name: 🪙 Token Whitelist Request
+description: Request to whitelist a token for Bubble Degen.
+title: "[Token Request] <Token Symbol>"
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest in Bubble Degen! Please fill out the following details to request your token be added to the whitelist. All addresses will be validated and stored in lowercase automatically.
+
+  - type: input
+    id: contract
+    attributes:
+      label: Token Contract Address
+      description: The token's smart contract address (Ethereum/Avalanche address).
+      placeholder: "0x..."
+    validations:
+      required: true
+
+  - type: input
+    id: symbol
+    attributes:
+      label: Token Symbol
+      description: The token's ticker (e.g., WAVAX, USDT).
+      placeholder: "ABC"
+    validations:
+      required: true
+
+  - type: input
+    id: decimals
+    attributes:
+      label: Token Decimals
+      description: Usually 18 for ERC-20 tokens but please confirm.
+      placeholder: "18"
+    validations:
+      required: true
+
+  - type: input
+    id: logo_url
+    attributes:
+      label: Token Logo URL (Optional)
+      description: URL to the token's logo image (ideally 250x250 PNG).
+      placeholder: "https://..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional Notes (Optional)
+      description: Anything else we should know (e.g., listing links, launchpad source, security audits).
+      placeholder: "This token was launched via Arena Launcher..."
+    validations:
+      required: false
