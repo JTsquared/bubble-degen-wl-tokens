@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for your interest in Bubble Degen! Please fill out the following details to request your token be added to the whitelist. Logos should be 250x250 pixels. Failure to adhere to this requirement may delay your request.
+        Thanks for your interest in Bubble Degen! Please fill out the following details to request your token be added to the whitelist. Logos should be a square image in .png format. Failure to meet this requirement will result in delays.
 
   - type: input
     id: contract
